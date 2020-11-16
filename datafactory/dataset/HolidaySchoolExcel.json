@@ -1,0 +1,34 @@
+{
+	"name": "HolidaySchoolExcel",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Holiday",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "School holidays",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "holidays.xlsx",
+				"folderPath": "holidays"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Start",
+				"type": "String"
+			},
+			{
+				"name": "End",
+				"type": "String"
+			},
+			{
+				"name": "School holiday",
+				"type": "String"
+			}
+		]
+	}
+}

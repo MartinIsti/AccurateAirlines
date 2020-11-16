@@ -1,0 +1,30 @@
+{
+	"name": "HolidayFederalExcel",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Holiday",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Federal holidays",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "holidays.xlsx",
+				"folderPath": "holidays"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Date",
+				"type": "String"
+			},
+			{
+				"name": "Federal holiday",
+				"type": "String"
+			}
+		]
+	}
+}
