@@ -1,0 +1,24 @@
+{
+	"name": "FlightDelays",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Flights",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"DatasetName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": {
+				"value": "@dataset().DatasetName",
+				"type": "Expression"
+			}
+		}
+	}
+}
