@@ -46,7 +46,7 @@
 						"referenceName": "FlightDelays",
 						"type": "DatasetReference",
 						"parameters": {
-							"DatasetName": "flight_delays"
+							"DatasetName": "flights_delays"
 						}
 					}
 				],
