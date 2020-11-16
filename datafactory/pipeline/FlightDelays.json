@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "FlightDelays",
+				"name": "flights_delays",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -55,7 +55,8 @@
 						"referenceName": "flightdelayscsv",
 						"type": "DatasetReference",
 						"parameters": {
-							"DatasetName": "flights_delays"
+							"DatasetName": "flights_delays",
+							"FolderName": "flightdelays/flights"
 						}
 					}
 				]
@@ -113,7 +114,8 @@
 						"referenceName": "flightdelayscsv",
 						"type": "DatasetReference",
 						"parameters": {
-							"DatasetName": "airports_delays"
+							"DatasetName": "airports_delays",
+							"FolderName": "flightdelays/airports"
 						}
 					}
 				]
@@ -171,7 +173,8 @@
 						"referenceName": "flightdelayscsv",
 						"type": "DatasetReference",
 						"parameters": {
-							"DatasetName": "airlines_delays"
+							"DatasetName": "airlines_delays",
+							"FolderName": "flightdelays/airlines"
 						}
 					}
 				]
