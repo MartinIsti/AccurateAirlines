@@ -1,0 +1,24 @@
+{
+	"name": "HolidayFederal",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage_raw",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "federal.csv",
+				"folderPath": "holidays/federal",
+				"fileSystem": "raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
