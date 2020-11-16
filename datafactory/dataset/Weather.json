@@ -1,0 +1,19 @@
+{
+	"name": "Weather",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage_raw",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "weather",
+				"fileSystem": "raw"
+			}
+		},
+		"schema": {}
+	}
+}
