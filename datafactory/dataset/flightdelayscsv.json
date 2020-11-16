@@ -7,7 +7,12 @@
 		},
 		"parameters": {
 			"DatasetName": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "flights_delays"
+			},
+			"FolderName": {
+				"type": "string",
+				"defaultValue": "flightsdelays/airlines"
 			}
 		},
 		"annotations": [],
@@ -20,7 +25,7 @@
 					"type": "Expression"
 				},
 				"folderPath": {
-					"value": "@concat('flightdelays/', dataset().DatasetName)",
+					"value": "@dataset().FolderName",
 					"type": "Expression"
 				},
 				"fileSystem": "raw"
