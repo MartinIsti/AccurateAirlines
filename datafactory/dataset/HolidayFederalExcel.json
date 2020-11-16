@@ -8,11 +8,11 @@
 		"annotations": [],
 		"type": "Excel",
 		"typeProperties": {
+			"sheetName": "Federal holidays",
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": "holidays.xlsx",
-				"folderPath": "holidays",
-				"container": "raw"
+				"folderPath": "holidays"
 			},
 			"firstRowAsHeader": true
 		},
