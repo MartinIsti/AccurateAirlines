@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "HolidaySchool.csv",
 				"folderPath": "holidays/school",
 				"fileSystem": "raw"
 			},
